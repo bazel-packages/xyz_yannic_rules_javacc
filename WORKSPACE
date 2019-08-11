@@ -12,7 +12,7 @@ http_archive(
     ],
 )
 
-load("//xyz_yannic_rules_javacc/javacc:repositories.bzl", "rules_javacc_dependencies", "rules_javacc_toolchains")
+load("//javacc:repositories.bzl", "rules_javacc_dependencies", "rules_javacc_toolchains")
 rules_javacc_dependencies()
 rules_javacc_toolchains()
 
