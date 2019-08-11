@@ -30,7 +30,7 @@ before_install:
     rm -f install.sh
 
 script:
-  - bazel build //... @build_bazel_rules_proto_tests//...
+  - bazel build //...
 
 notifications:
   email: false

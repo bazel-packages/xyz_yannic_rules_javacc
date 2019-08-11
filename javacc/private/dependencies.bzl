@@ -26,4 +26,11 @@ dependencies = {
             "https://github.com/bazelbuild/bazel/archive/master.tar.gz",
         ],
     },
+    # Dependency of `io_bazel` and `org_javacc`.
+    "rules_java": {
+        "strip_prefix": "rules_java-master",
+        "urls": [
+            "https://github.com/bazelbuild/rules_java/archive/master.tar.gz",
+        ],
+    },
 }

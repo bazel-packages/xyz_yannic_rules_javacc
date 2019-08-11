@@ -86,17 +86,17 @@ javacc_java_library = rule(
             mandatory = False,
             providers = [JavaInfo],
         ),
+        "_host_javabase": attr.label(
+            default = "@bazel_tools//tools/jdk:current_host_java_runtime",
+        ),
+        "_java_toolchain": attr.label(
+            default = "@bazel_tools//tools/jdk:toolchain",
+        ),
         "_javacc": attr.label(
             mandatory = False,
             default = "@org_javacc//src/main:javacc",
             executable = True,
             cfg = "host",
-        ),
-        "_java_toolchain": attr.label(
-            default = "@bazel_tools//tools/jdk:toolchain",
-        ),
-        "_host_javabase": attr.label(
-            default = "@bazel_tools//tools/jdk:current_host_java_runtime",
         ),
     },
     fragments = [
