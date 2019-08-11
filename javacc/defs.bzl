@@ -94,7 +94,7 @@ javacc_java_library = rule(
         ),
         "_javacc": attr.label(
             mandatory = False,
-            default = "//third_party/org_javacc/src/main:javacc",
+            default = "@org_javacc//src/main:javacc",
             executable = True,
             cfg = "host",
         ),
