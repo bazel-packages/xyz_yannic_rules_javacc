@@ -13,17 +13,17 @@
 # limitations under the License.
 
 dependencies = {
+    # Dependency of `org_javacc`.
+    "io_bazel": {
+        "strip_prefix": "bazel-0.28.1",
+        "urls": [
+            "https://github.com/bazelbuild/bazel/archive/0.28.1.tar.gz",
+        ],
+    },
     "org_javacc": {
         "strip_prefix": "org_javacc-master",
         "urls": [
             "https://github.com/bazel-packages/org_javacc/archive/master.tar.gz",
-        ],
-    },
-    # Dependency of `org_javacc`.
-    "io_bazel": {
-        "strip_prefix": "bazel-master",
-        "urls": [
-            "https://github.com/bazelbuild/bazel/archive/master.tar.gz",
         ],
     },
     # Dependency of `io_bazel` and `org_javacc`.
